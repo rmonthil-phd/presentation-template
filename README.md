@@ -30,4 +30,4 @@ pdflatex -shell-escape main.tex
 
 # Output
 
-![main.pdf](./images/capture.png  "main.pdf")
+![output](./images/capture.png)
