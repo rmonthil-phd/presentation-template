@@ -1,0 +1,64 @@
+\begin{tikzpicture}
+	% gain as a function of the free parameter $\alpha$
+	\begin{axis} [
+		axis on top,
+		%%% size
+		width=\textwidth,
+		%height=\textwidth,
+		%%% y
+		%ymin=0,
+		%ymax=1,
+		ylabel={$y$},
+		%ymode=log,
+		%%% x
+		xlabel=$x$,
+		%xmin=0,
+		%xmax=1,
+		%%% legend
+		legend cell align=left,
+		legend pos = north west,
+		legend style={
+			draw=none, 
+			fill=none, 
+			xshift=2pt, 
+			/tikz/every even column/.append style={column sep=0pt}
+		},
+	]
+		%%% average
+		\addplot
+		[
+			color=colorplot0,
+			domain=0:4,
+			samples=100,
+			visible on=<3->,
+			thick
+		] {
+			x^2
+		};
+		\addlegendentry{$x^2$};
+		%%% average
+		\addplot
+		[
+			color=colorplot1,
+			domain=0:4,
+			samples=100,
+			visible on=<4->,
+			thick
+		] {
+			sqrt(x)
+		};
+		\addlegendentry{$\sqrt{x}$};
+		%%% average
+		\addplot
+		[
+			color=colorplot2,
+			domain=0:4,
+			samples=100,
+			visible on=<5->,
+			thick
+		] {
+			5 + x
+		};
+			\addlegendentry{$5 + x$};
+	\end{axis}
+\end{tikzpicture}
