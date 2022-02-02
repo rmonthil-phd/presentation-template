@@ -30,4 +30,4 @@ pdflatex -shell-escape main.tex
 
 # Output
 
-![main.pdf](main.pdf  "main.pdf")
+![main.pdf](./main.pdf  "main.pdf")
